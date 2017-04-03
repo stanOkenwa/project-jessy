@@ -13,20 +13,8 @@
 		}
 		@media (max-width: 480px){
 			.spanOne{
-				top: -15px;
+				top: 15px;
 				left: 140px
-			}
-		}
-		@media (max-width: 860px){
-			.spanOne{
-				top: -15px;
-				left: 175px
-			}
-		}
-		@media (max-width: 860px){
-			.spanTwo{
-				top: -15px;
-				left: 175px
 			}
 		}
 		@media (min-width: 480px){
@@ -41,22 +29,46 @@
 				left: 140px
 			}
 		}
-		@media (min-width: 480px){
+		@media (min-width: 860px){
 			.spanNums{
 				top: -15px;
 				left: 145px
 			}
 		}
-		@media (max-width: 860px){
+		@media (max-width: 960px){
 			.spanNums{
 				top: 15px;
-				left: 175px
+				left: 145px
 			}
 		}
 		@media (max-width: 480px){
 			.spanNums{
 				top: 15px;
 				left: 140px
+			}
+		}
+		@media (max-width: 480px){
+			.searchon{
+				top: 23px;
+				left: 60px;
+			}
+		}
+		@media (min-width: 480px){
+			.searchon{
+				top: 23px;
+				left: 8px;
+			}
+		}
+		@media (max-width: 480px){
+			.search{
+				top: 12px;
+				right: 20px;
+			}
+		}
+		@media (min-width: 480px){
+			.search{
+				top: 23px;
+				right: 40px;
 			}
 		}
 	</style>
@@ -65,15 +77,39 @@
 <!-- Header ================================================== -->
 	<header class="w-100">
 		<div style="background: url( http://placehold.it/400x400);" class="cover tc pa2 vh-100 cf">
-			<nav class="dtc v-mid w-third fl tr mt0-ns">
-				<a class="f6 fw6 hover-blue link pointer black-80 mr2 mr3-m mr4-l dib ttu">about us</a>
-				<a class="f6 fw6 hover-blue link pointer black-80 mr2 mr3-m mr4-l dib ttu">help</a>
-			</nav><!--left nav --><div class="w-third tc fl">
-				<img src="http://placehold.it/100x100">
-			</div><!--logo --><nav class="dtc v-mid w-third tl mt0-ns fl">
-					<a class="f6 fw6 hover-blue link pointer black-80 mr2 mr3-m mr4-l dib ttu">sign up</a>
-					<a class="f6 fw6 hover-blue link pointer black-80 mr2 mr3-m mr4-l dib ttu">sign in</a>
+			<div class="w-100 mb4">
+				<nav class="dtc v-mid w-third fl tr mt0-ns">
+					<a class="f6 fw6 hover-green link pointer navy mr2 mr3-m mr4-l dib ttu">about us</a>
+					<a class="f6 fw6 hover-green link pointer navy mr2 mr3-m mr4-l dib ttu">help</a>
+				</nav><!--left nav --><div class="w-third tc fl">
+					<img src="http://placehold.it/100x50">
+				</div><!--logo --><nav class="dtc v-mid w-third tl mt0-ns fl">
+					<a class="f6 fw6 hover-green link pointer navy mr2 mr3-m mr4-l dib ttu">sign up</a>
+					<a class="f6 fw6 hover-green link pointer navy mr2 mr3-m mr4-l dib ttu">sign in</a>
 				</nav><!--right nav -->
+			</div>
+			<div class="v-mid vh-50 mt6-ns pv4 tc">
+				<div class="v-base">
+					<p class="f1 fw6 green">
+						On Demand, <small>Everywhere</small>
+					</p>
+					<div class="bg-transparent">
+						<div class="w-100">
+							<div class="relative w-100 w-50-ns mt3-ns pv1 pv3-ns bg-white br-pill dib">
+								<input class="bg-transparent w-60 w-two-thirds-ns bn br2 pa2 tc navy" placeholder="search">
+								<div class="absolute bg-white tc search">
+									<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966; height: 20px;" xml:space="preserve">
+										<path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
+										s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
+										c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
+										s-17-7.626-17-17S14.61,6,23.984,6z" fill="#000" />
+									</svg><!-- search logo -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>
 
@@ -86,7 +122,7 @@
 			</div><!--how it works -->
 			<div class="w-100 pv3 ph2 ph4-ns cf">
 				<div class="w-100 w-50-m w-25-l fl relative">
-					<article class="relative ph2">
+					<article class="relative ph2 pt4 pt0-ns">
 						<span class="absolute ba b--black-10 br-100 ph2 pv1 left-2 bg-white spanOne">1</span>
 						<div class="bg-white tc pv2">
 							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74px" height="74px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512; fill:green; padding: 20px;" xml:space="preserve">
@@ -109,7 +145,7 @@
 										C501.291,242.002,494.955,235.666,487.14,235.666z"/>									
 									<circle cx="256.823" cy="48.358" r="48.358"/>
 							</svg>
-							<span class="h3" ><br/>Check if available in your location. If not, we're sorry, Coming soon</span>
+							<span class="h3" ><br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut</span>
 						</div>
 					</article>
 				</div><div class="w-100 w-50-m w-25-l fl relative">
@@ -136,7 +172,7 @@
 										C501.291,242.002,494.955,235.666,487.14,235.666z"/>									
 									<circle cx="256.823" cy="48.358" r="48.358"/>
 							</svg>
-							<span class="h3" ><br/>Make a list, you can choose which market/fast foods to get items from.</span>
+							<span class="h3" ><br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut</span>
 						</div>
 					</article>
 				</div><div class="w-100 w-50-m w-25-l fl relative">
@@ -163,7 +199,7 @@
 										C501.291,242.002,494.955,235.666,487.14,235.666z"/>									
 									<circle cx="256.823" cy="48.358" r="48.358"/>
 							</svg>
-							<span class="h3" ><br/>Pay by card, online/cash. Payment is totally secure.</span>
+							<span class="h3" ><br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut</span>
 						</div>
 					</article>
 				</div><div class="w-100 w-50-m w-25-l fl relative">
@@ -188,16 +224,16 @@
 									c-4.822,0-8.733,3.91-8.733,8.733v60.393c0,4.824,3.91,8.733,8.733,8.733h108.798C523.342,270.394,527.48,262.421,523.408,256.635z
 									"/>
 							</svg>
-							<span class="h3" ><br/>Delivery is done with care and ultimate satisfaction of user.</span>
+							<span class="h3" ><br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut</span>
 						</div>
 					</article>
 				</div>
 			</div><!-- how it works explanation -->
 			<div class="w-100 tc bg-transparent pv3">
-				<div class="w-50 dib tl">
-					<span>Within Calabar Municipality, Delivery takes</span>
+				<div class="w-70 w-50-l dib tl">
+					<span>Within city, Delivery takes</span>
 					<h1 class="ph2 pv2 ba b--black-10 dib">1:00 Hr</h1><br>
-					<span>Calabar South and 8miles, Delivery takes</span>
+					<span>Outside city, Delivery takes</span>
 					<h1 class="ph2 pv2 ba b--black-10 dib">1Hr 30Min</h1><br>
 				</div>
 			</div>
@@ -210,22 +246,22 @@
 	</main>
 
 	<!-- Footer ================================================== -->
-	<footer class="bg-white w-100 ph2 ph4-ns">
-		<section class="w-100 bg-transparent ph4-ns">
-			<div class="w-100 cf">
-				<div class="w-100 w-50-m w-25-l fl tc tl-ns">
+	<footer class="bg-white w-100">
+		<section class="w-100 bg-transparent">
+			<div class="w-100 cf lh-copy bb b--black-20 ph2 ph4-ns">
+				<div class="w-100 w-third-ns fl tc">
 					<h3 class="mb0">Secure payments with</h3>
 					<img src="images/cards.png">
-				</div><!-- 1 --><div class="w-100 w-50-m w-25-l fl">
-					<nav class="v-mid w-100 tc tl-ns mt3-ns pt3">
+				</div><!-- 1 --><div class="w-100 w-third-ns fl">
+					<nav class="v-mid w-100 tc tc-ns mt3-ns pt3">
 						<a class="f6 fw6 hover-green link pointer black-60 mr1 mr2-l dib">About Us</a>
 						<a class="f6 fw6 hover-green link pointer black-60 mr1 mr2-l dib">Contacts</a>
 						<a class="f6 fw6 hover-green link pointer black-60 mr1 mr2-l dib">Terms</a>
 						<a class="f6 fw6 hover-green link pointer black-60 mr1 mr2-l dib">Privacy</a>
 					</nav>
-				</div><!-- 2 --><div class="w-100 w-50-m w-25-l fl tc tl-ns bb b--black-20 bn-ns pb2">
+				</div><!-- 2 --><div class="w-100 w-third-ns fl tc tl-ns pb2">
 					<div class="relative w-100 mt3-ns pt3">
-						<div class="absolute" style="top: 15px; left: 60px;">
+						<div class="absolute bg-white pl3 pl0-ns w-10 w-20-ns tc searchon">
 							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966; height: 20px;" xml:space="preserve">
 								<path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
 								s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
@@ -233,11 +269,14 @@
 								s-17-7.626-17-17S14.61,6,23.984,6z" fill="#000" />
 							</svg><!-- search logo -->
 						</div>
-						<input class="bg-transparent w-90 w-two-thirds-ns ba b--black-20 br2 pa2 tr-m tc black-60" placeholder="search">
+						<input class="bg-transparent w-60 w-two-thirds-ns ba b--black-20 br2 pa2 tr-m tc black-60" placeholder="search">
 					</div>
-				</div><!-- 3 --><div class="w-100 w-50-m w-25-l fl tc tl-ns mt3-ns pv3 pv0">
-					<a class="link dim black-30 dib br-100 h1 w1 mr3 " href="#" title="">
-						    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 402.041 402.04" style="enable-background:new 0 0 402.041 402.04; fill:currentcolor"
+				</div><!-- 3 -->
+			</div><!-- top footer container -->
+			<div class="w-100 tc ph2 ph4-ns">
+				<div class="w-100 tc mt3 pv3">
+					<a class="link dim black-30 dib br-100 h1 w1 mr5 " href="#" title="">
+						    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 402.041 402.04" style="enable-background:new 0 0 402.041 402.04; fill:green"
 								 xml:space="preserve">
 									<path d="M54.816,292.382c-15.229,0-28.169,5.331-38.831,15.988C5.33,319.026,0,331.969,0,347.197
 										c0,15.232,5.325,28.172,15.985,38.828c10.662,10.657,23.606,15.988,38.831,15.988c15.227,0,28.168-5.331,38.828-15.988
@@ -258,15 +297,15 @@
 										<title>rss</title>
 							</svg>
 						</a>
-						<a class="link dim black-30 dib h1 w1 br-100 mr3 " href="#" title="">
-						    <svg data-icon="facebook" viewBox="0 0 32 32" style="fill:currentcolor">
+						<a class="link dim black-30 dib h1 w1 br-100 mr5 " href="#" title="">
+						    <svg data-icon="facebook" viewBox="0 0 32 32" style="fill:green">
 						      <title>facebook icon</title>
 						      <path d="M8 12 L13 12 L13 8 C13 2 17 1 24 2 L24 7 C20 7 19 7 19 10 L19 12 L24 12 L23 18 L19 18 L19 30 L13 30 L13 18 L8 18 z"></path>
 						    </svg>
 						</a>
-						<a class="link dim black-30 dib h1 w1 br-100 mr3 " href="#" title="">
+						<a class="link dim black-30 dib h1 w1 br-100 mr5 " href="#" title="">
 						    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-								 viewBox="0 0 352 352" style="enable-background:new 0 0 352 352; fill:currentcolor" xml:space="preserve">
+								 viewBox="0 0 352 352" style="enable-background:new 0 0 352 352; fill:green" xml:space="preserve">
 								<path d="M259.104,279.929c0,0-10.445,12.012-30.291,12.012s-28.724-12.012-28.724-29.768
 									c0-7.134,0-50.861,0-100.619h64.17v-60.977h-64.17c0-53.98,0-100.577,0-100.577h-48.321c-7.551,45.134-37.31,82.718-77.674,101.165
 									v60.388h47.135c0,58.694,0,111.822,0,115.87c0,16.085,15.145,74.577,92.439,74.577c45.436,0,64.237-29.246,64.237-29.246
@@ -274,9 +313,9 @@
 								<title>tumblr</title>
 							</svg>
 						</a>
-						<a class="link dim black-30 dib br-100 h1 w1 mr3 " href="#" title="">
+						<a class="link dim black-30 dib br-100 h1 w1 mr5 " href="#" title="">
 						    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-								 viewBox="0 0 461.001 461.001" style="enable-background:new 0 0 461.001 461.001; fill:currentcolor" xml:space="preserve" >
+								 viewBox="0 0 461.001 461.001" style="enable-background:new 0 0 461.001 461.001; fill:green" xml:space="preserve" >
 								<path d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728
 									c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137
 									C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607
@@ -284,10 +323,14 @@
 									<title>youtube</title>
 							</svg>
 						  </a>
-				</div><!-- 4 -->
-			</div><!-- top footer container -->
+				</div>
+			</div><!-- icons -->
+			<div class="w-100 bg-transparent tc pb2">
+				<small class="black-60">
+                    © goM 2017
+                </small>
+			</div>
 		</section>
-		<section class="w-100 bg-transparent"></section>
 	</footer>
 </body>
 </html>
