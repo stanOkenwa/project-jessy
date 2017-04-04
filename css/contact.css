@@ -11,9 +11,14 @@ form{
     margin-top: 1.8%;
 }
 
+textarea{
+    resize: vertical;
+}
+
+
 @media only screen and (max-width: 425px){
     header{
-        height: 4rem;
+        height: 5rem;
         border-bottom: solid 2px;
     }
     .form_header {
@@ -47,7 +52,7 @@ form{
 
     .message{
         width: 80%;
-        height: 6em;
+        height: auto;
         margin-left: 10%;
         margin-top: 1em;
         
@@ -85,7 +90,6 @@ form{
     }
 
 }
-
 
 @media only screen and (min-width: 425px) and (max-width: 900px){
 
@@ -125,7 +129,7 @@ form{
 
     .message{
         width: 87%;
-        height: 6em;
+        height: auto;
         margin-left: 5%;
         margin-top: 1em;
     }
@@ -202,7 +206,7 @@ form{
     }
     .message{
         width: 95.2%;
-        height: 6rem;
+        height: auto;
         margin-top: 2%;
         margin-left: 2.5%;
     }
@@ -281,7 +285,7 @@ form{
     }
     .message{
         width: 92.2%;
-        height: 6rem;
+        height: auto;
         margin-top: 2%;
         margin-left: 4%;
     }
@@ -304,6 +308,10 @@ form{
         font-size: 1.125rem;
         font-family: 'Segoe UI';
         padding-left: 1%;
+    }
+
+    textarea{
+        height: 6em;
     }
 
     button{
